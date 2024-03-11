@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>É iniciante ?</legend>
+            <input type="radio" name="iniciante" id="sim" value="S"><label for="sim">Sim</label><br>
+            <input type="radio" name="iniciante" id="nao" value="F"><label for="nao">Não</label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>A quantos anos trabalha com música ?</legend>
+            <input type="number" name="anos" id="ianos">
+        </fieldset>
+        <fieldset>
+            <legend>Serviço que busco</legend>
+            <input type="checkbox" name="beat" id="ibeat">
+            <label for="ibeat">Beat</label>
+            <input type="checkbox" name="mixagem" id="imixagem">
+            <label for="imixagem">Mixagem</label>
+            <input type="checkbox" name="gravacao" id="igravacao">
+            <label for="igravacao">Gravação</label>
+            <input type="checkbox" name="composicao" id="icomposicao">
+            <label for="icomposicao">Composição</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Forma de Pagamento</legend>
+            <input type="checkbox" name="pix" id="ipix">
+            <label for="ipix">Pix</label>
+            <input type="checkbox" name="cartao" id="icartao">
+            <label for="icartao">Cartao</label>
+            <input type="checkbox" name="dinheiro" id="idinheiro">
+            <label for="idinheiro">Dinheiro</label>
+            <input type="checkbox" name="liso" id="iliso">
+            <label for="iliso">Sou liso</label>
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+
+    
+</body>
+</html>
