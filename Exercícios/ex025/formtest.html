@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: -1px;
+           
+            
+            
+        }
+    
+        
+        h1{
+            padding-left: 220px;
+        }
+        div.form{
+            margin: auto;
+          
+            
+            background-color: black;
+            padding: 20px;
+            width: 600px;
+            height: 600px;
+            
+        }
+        input{
+            border: 3px solid rgb(13, 213, 13);
+            padding: 8px;
+            background-color: black;
+            color: white;
+        }
+        input:hover{
+            transform: translate(-1px,-1px);
+            border: 3px solid red;
+            transition: transform 0.5;
+        }
+
+        fieldset{
+            border: 1px solid black;
+
+        }
+        div.botao{
+            width: 200px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Contato</h1>
+    <div class="form">
+    
+    
+        <form action="cadastro.php" method="get" autocomplete="on">
+        <h2 style="color: white;">Preencha os campos abaixo para fazer o seu orçamento</h2>
+        <p>
+            <label for="inome"></label>
+            <input type="text" name="nome" id="inome" placeholder="Nome Completo" size="80">
+        </p>  
+        <p>
+            <label for="iartistico"></label>
+            <input type="text" name="artistico" id="iartistico" placeholder="Nome Artístico" size="80">
+
+        </p>  
+        <p>
+            <label for="ilocal"></label>
+            <input type="text" name="local" id="ilocal" placeholder="Cidade / Estado" size="80">
+        </p>
+        <p>
+            <label for="irede"></label>
+            <input type="text" name="rede" id="irede" placeholder="@ do instagram" size="80">
+        </p>
+        <p>
+            <label for="inumero"></label>
+            <input type="text" name="numero" id="inumero" placeholder="Whatsapp" size="80">
+        </p>
+        <p>
+            <label for="igenero"></label>
+            <input type="text" name="genero" id="igenero" placeholder="Gênero musical" size="80">
+        </p>
+        <fieldset style="color: white;">
+            
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Beat Exclusivo</label>
+            </div>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Composição (Letra)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Captação de Voz</label>
+            </div>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Mixagem e Masterização</label>
+            </div>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Identidade Visual (capa de single)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Licença de Beat (Free for Proft)</label>
+            </div>
+
+        </fieldset>
+        <div>
+            <input type="text" name="mensagem" id="imensagem" placeholder="Insira uma mensagem aqui" size="80">
+            <label for="imensagem"></label>
+        </div>
+
+
+        <div class="botao">
+            <input type="submit" value="Enviar">
+        </div>
+
+
+    </div>
+    </form>
+</div>
+</body>
+</html>

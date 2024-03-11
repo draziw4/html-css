@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+
+        body{
+            background-color: #EFF2F5;
+           
+
+        }
+        label{
+            color: black
+        }
+        
+
+        form{
+            border: 1px solid black;
+            text-align: center;
+            padding: 100px;
+        }
+        img{
+            width: 200px;
+            border-radius:10px;
+        }
+        input:hover{
+            transform: translate(-3px,-3px);
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="cadastro2.php">
+    <div class="imagem">
+            <img src="90dfb79a-30e7-48b3-9b57-4e85a4a7bd14.JPG" alt="">
+    </div>
+    <div>
+
+        <h1>Agende seu date comigo</h1>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome">
+    </div>
+    <div>
+        <label for="idata">Data do date</label>
+        <input type="date" name="data" id="idata">
+    </div>
+    <div>
+        <label for="iage">Idade</label>
+        <input type="number" name="age" id="iage">
+    </div>
+    <div>
+        <fieldset>
+            <legend>O que iremos fazer ?</legend>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Sexo gostoso</label>
+            </div>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Conversar</label>
+            </div>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Paquerar</label>
+            </div>
+            <div>
+                <input type="checkbox" name="beat" id="ibeat">
+                <label for="ibeat">Fio terra</label>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <input type="button" value="Enviar">
+    </div>
+
+   
+</form>
+    
+</body>
+</html>
